@@ -1,7 +1,8 @@
--- ============================================================
--- OLIST BUSINESS PERFORMANCE ANALYSIS
--- 03_exploration.sql
----------------------
+/*
+===============================================================================
+Olist business performance analysis
+Exploration
+===============================================================================
 
 -- Purpose:
 -- Explore the structure and behavior of the raw Olist data
@@ -19,6 +20,7 @@
 -- How many orders contain multiple sellers?
 -- Useful for understanding order complexity and marketplace
 -- structure.
+*/
 
 SELECT
 COUNT(*) AS multi_seller_orders
