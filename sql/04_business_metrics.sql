@@ -1,11 +1,13 @@
--- ============================================================
--- OLIST BUSINESS PERFORMANCE ANALYSIS
--- 04_business_metrics.sql
---------------------------
+/*
+===============================================================================
+Olist business performance analysis
+Business Metrics
+===============================================================================
 
--- Purpose:
--- Answer key business questions across three areas:
+Purpose:
+Answer key business questions across three areas:
 ----------------------------------------------------
+*/
 
 --   1. Executive Performance
 --   2. Customer Economics
