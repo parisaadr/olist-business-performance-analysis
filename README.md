@@ -2,9 +2,9 @@
 
 ## Executive summary
 
-This project analyzes the performance of a Brazilian e-commerce marketplace using SQL and a structured business analytics framework. The objective is to evaluate whether business growth is translating into customer value and operational performance by examining revenue trends, customer retention, delivery reliability, and category performance.
+This project analyzes the performance of a Brazilian e-commerce marketplace using SQL and a structured business analytics framework. The objective was to evaluate whether business growth translated into customer value and operational performance by examining revenue trends, customer retention, delivery reliability, and category performance.
 
-A PostgreSQL data model was built from the raw Olist dataset, followed by the creation of analytical views at the order, customer, and product category levels. These views were used to answer strategic business questions related to growth quality, customer economics, and operational execution.
+A PostgreSQL data model was built from the raw Olist dataset, followed by the creation of analytical views at the order, customer, and product category levels. These views were used to answer executive-level business questions related to growth quality, customer economics, and operational execution.
 
 ## Business objective
 
@@ -18,8 +18,6 @@ The analysis focuses on three executive questions:
 
 ## Analytical framework
 
-The analysis is organized into three areas.
-
 ### Executive performance
 
 * Monthly order growth
@@ -30,32 +28,43 @@ The analysis is organized into three areas.
 ### Customer economics
 
 * Repeat purchase rate
-* Revenue from repeat customers
+* Revenue contribution from repeat customers
 * Customer revenue segmentation
 * Time between purchases
 
 ### Operational performance
 
-* Delivery delays by category
+* Delivery delays by product category
 * Relationship between delivery performance and review scores
-* Customer experience impact
+* Customer experience indicators
 
 ## Data model
 
-The project uses three analytical views.
+The analysis is built on three analytical views.
 
-| View           | Grain                | Purpose                                      |
-| -------------- | -------------------- | -------------------------------------------- |
-| order_level    | One row per order    | Revenue, growth, delivery, customer behavior |
-| customer_level | One row per customer | Retention, segmentation, customer value      |
-| category_level | One row per category | Product performance and operational analysis |
+| View           | Grain                | Purpose                                          |
+| -------------- | -------------------- | ------------------------------------------------ |
+| order_level    | One row per order    | Growth, revenue, delivery, and customer behavior |
+| customer_level | One row per customer | Retention, segmentation, and customer value      |
+| category_level | One row per category | Product performance and operational analysis     |
 
 ## Key findings
 
-* Revenue growth was primarily driven by increasing order volume rather than sustained expansion in average order value.
-* A relatively small share of customers generated repeat purchases, but repeat customers contributed a disproportionately large share of total revenue.
-* Delivery performance varied significantly across product categories.
-* Late deliveries were associated with lower customer review scores, suggesting that operational reliability materially affected customer experience.
+### Growth was primarily driven by order volume
+
+Order volume increased substantially across the analysis period, and revenue grew alongside transaction activity. Average order value remained relatively stable, indicating that revenue expansion was driven primarily by higher purchasing volume rather than sustained increases in order value.
+
+### Repeat purchasing was limited
+
+Only **3.12% of customers placed more than one order**, and repeat customers accounted for **5.82% of total revenue**. The business relied heavily on one-time purchasers, suggesting that customer retention represented a meaningful growth opportunity.
+
+### Delivery performance was strongly associated with customer satisfaction
+
+Orders delivered on time received an average review score of **4.30**, compared with **2.57** for late deliveries and **1.74** for undelivered orders. While this analysis does not establish causation, it shows a clear association between operational reliability and customer experience.
+
+### Revenue was geographically concentrated
+
+São Paulo contributed the largest share of marketplace revenue, indicating a significant concentration of commercial activity in a small number of geographic markets.
 
 ## Repository structure
 
